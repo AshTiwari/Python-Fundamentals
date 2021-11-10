@@ -62,4 +62,12 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 - Hence, the code written under `if __name__ == "__main__":`  will only be executed if the script is run and not when imported. 
 
 
+## The Python Execution Model:
+- Any .py file can be considered as a module.
+- Modules and scripts are interchangable based on context and usage.
+- A bigger python file handling large operations should be considered as Python Program instead of Python Script or Python module.
 
+
+## 
+- `from module import *` opens up to possibility of namespace clash is python programs so it should be avoided.
+- sys.argv  
