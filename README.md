@@ -2,31 +2,31 @@
 This repository contains notes from the course Python Fundamentals from Pluralsight by Austin Bingham and Robert Smallshire.
 
 
-Module 1:
+# Module 1:
 
-Pyhton Overview Part 1:
+## Pyhton Overview Part 1:
 - A general purpose programming language. 
 - Python is an interpreted language however the code in compiled invisibly. 
 - Python is strongly typed i.e. every object has a type.
 - Python is dynamically typed which means there is no type checking prior to running the code.
 
 
-Module 2:
+# Module 2:
 
-Read-Eval-Print-Loop: REPL
+## Read-Eval-Print-Loop: REPL
 
-Zen of Python:
+## Zen of Python:
 - PEP: python enhancement proposals
 
-Scalar Type:
+## Scalar Type:
 - Built-In data types:
    1. Primitive Scalar Type: int, float, None, Bool
    2. Collection Type: Dictionary
 
 
-Module 3:
+# Module 3:
 
-str:
+## str:
 - collection of unicode codepoints.
 - not called as collection of characters because not all unicode codepoints are characters.
 - They are immutable. You can replace it but cannot update it.
@@ -34,28 +34,28 @@ str:
 - Check out Escape Sequence and Raw String.
 - Because strings are immuatble, string functions returns a new updated strings instead of updating previous strings. e.g. s = s.upper()
 
-bytes:
+## bytes:
 - collection of bytes.
 - Can be constructed using:
    1. s = b"data"
    2. using the bytees() constructor
 - string is encoded to bytes and bytes is decoded to str.
 
-list:
+## list:
 - mutable sequence of objects.
 
-dict:
+## dict:
 - mutable sequence of key-value pair.
 - dict are oredered from Python 3.6 onwards.
 
 
-Module 4:
+# Module 4:
 
-Introduction:
+## Introduction:
 - Module: collection of similar functions in a source code file.
 
 
-Distinguish between Module Import and Module Execution:
+## Distinguish between Module Import and Module Execution:
 - print(`__name__`) gives different results on executing or when importing.
 - When imported, `__name__` attribute will store the name of the script file.
 - When executed as a isolated python script, `__name__` attribute will contain the value "main".
