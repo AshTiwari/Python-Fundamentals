@@ -58,7 +58,7 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 ## Distinguish between Module Import and Module Execution:
 - print(`__name__`) gives different results on executing or when importing.
 - When imported, `__name__` attribute will store the name of the script file.
-- When executed as a isolated python script, `__name__` attribute will contain the value "main".
+- When executed as a isolated python script, `__name__` attribute will contain the value "__main__".
 - Hence, the code written under `if __name__ == "__main__":`  will only be executed if the script is run and not when imported. 
 
 
