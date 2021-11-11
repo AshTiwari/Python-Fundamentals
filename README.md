@@ -53,6 +53,7 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 
 ## Introduction:
 - Module: collection of similar functions in a source code file.
+- Module is only run once and it is done when it is imported.
 
 
 ## Distinguish between Module Import and Module Execution:
@@ -67,7 +68,35 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 - Modules and scripts are interchangable based on context and usage.
 - A bigger python file handling large operations should be considered as Python Program instead of Python Script or Python module.
 
-
-## 
+## Main function and command line arguments:
 - `from module import *` opens up to possibility of namespace clash is python programs so it should be avoided.
-- sys.argv  
+- `sys.argv` attribute gives access to command line arguments. `sys.argv[0]` stores the name of the file.  
+
+
+
+
+# Module 5:
+
+## Introducntion:
+- Variable Assignment:
+-  1. When we write `x = 1000`, x is an object refrence pointing to a int object 1000.
+-  2. When we rewrite `x = 500`, int objectg being immutable is not updated, instead x points to a new int object 500.
+-  3. Because int 1000 is no longer referred by any object reference the python garbage collector clears the memmory.
+-  id(): Returns a integer identifier which is unique throughout the life of the object.
+-  `a is b` gives same result as `id(a) == id(b)` i.e. they both refer to same object.
+
+## Argument Passing:
+- Arguments passed is a function are passed by refrence and not pass by value.
+- Types of Argument:
+-  1. Positional Argument
+-  2. Arbitrary Positional Argument
+-  3. Keywoard Argument
+-  4. Arbitrary Keywoard Argument
+-  5. Default Argument
+-  Check out: [5 Types of Arguments in Python Function Definitions] (https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
+-  
+
+
+
+
+
