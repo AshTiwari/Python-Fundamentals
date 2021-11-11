@@ -94,9 +94,20 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
    4. Arbitrary Keywoard Argument
    5. Default Argument
 -  Check out: [5 Types of Arguments in Python Function Definitions](https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
--  
 
+## Python Type System:
+- Python is stong and dynamic typed.
+- Dynamic Typing indicates that the type of varaible is not defined and decided at run time.
+- Strongly typed means the variables do have a type and it matters when performin goperations. 
+- e.g. you cannot add a string with an integer as neither of it will be implicilty converted.
 
+## Variable Scoping:
+- LEGB Scope in Python:
+  1. Local
+  2. Enclosing
+  3. Global
+  4. Built-in 
+- Check LEGBscope.py file.
 
 
 
