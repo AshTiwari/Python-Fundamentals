@@ -93,7 +93,7 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 -  3. Keywoard Argument
 -  4. Arbitrary Keywoard Argument
 -  5. Default Argument
--  Check out: [5 Types of Arguments in Python Function Definitions] (https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
+-  Check out: [5 Types of Arguments in Python Function Definitions](https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
 -  
 
 
