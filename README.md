@@ -88,11 +88,11 @@ This repository contains notes from the course Python Fundamentals from Pluralsi
 ## Argument Passing:
 - Arguments passed is a function are passed by refrence and not pass by value.
 - Types of Argument:
--  1. Positional Argument
--  2. Arbitrary Positional Argument
--  3. Keywoard Argument
--  4. Arbitrary Keywoard Argument
--  5. Default Argument
+   1. Positional Argument
+   2. Arbitrary Positional Argument
+   3. Keywoard Argument
+   4. Arbitrary Keywoard Argument
+   5. Default Argument
 -  Check out: [5 Types of Arguments in Python Function Definitions](https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
 -  
 
