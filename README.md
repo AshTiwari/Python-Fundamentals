@@ -111,3 +111,6 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 
 
+# Module 6: Collections
+
+### Tuples:
