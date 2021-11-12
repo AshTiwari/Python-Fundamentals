@@ -123,4 +123,10 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - `join()` is preferred over`+` as it does not use too many temporary variables.
 - Syntax: `"<seperator>".join(sequence)`. e.g. `a = ";".join(["1","2","3"])` => `a = '1;2;3'`.
 - Use `a = a.split(";")` to reverse it.
-
+- To concatenate: Invoke Join on empty text.
+- String Formatiing: a = 
+   1. a = "{0}, {1}".format(1,2)
+   2. a = "{}, {}".format(1,2)
+   3. a = "{x}, {y}".format(y=2, x=1)
+   4. a = "{l[0]}, {l[1]}".format(l = [1,2])
+   5. a = "{math.pi}, {math.e}".format(math = math)  # here math is the imported module
