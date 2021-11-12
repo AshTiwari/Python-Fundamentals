@@ -122,5 +122,5 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - String concatenation with `+` or `join()`.
 - `join()` is better method than `+` as it does not use too many temporary variables.
 - Syntax: `"<seperator>".join(sequence)`
-- e.g. ";".join([1,2,3]) => '1;2;3'
+- e.g. `";".join([1,2,3])` => `'1;2;3'`
 
