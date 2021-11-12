@@ -120,7 +120,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### str:
 - Homogenous immutable sequence of unicode codepoints.
 - String concatenation with `+` or `join()`.
-- `join()` is better method than `+` as it does not use too many temporary variables.
-- Syntax: `"<seperator>".join(sequence)`
-- e.g. `";".join([1,2,3])` => `'1;2;3'`
+- `join()` is preferred over`+` as it does not use too many temporary variables.
+- Syntax: `"<seperator>".join(sequence)`. e.g. `a = ";".join(["1","2","3"])` => `a = '1;2;3'`.
+- Use `a = a.split(";")` to reverse it.
 
