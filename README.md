@@ -114,3 +114,13 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 # Module 6: Collections
 
 ### Tuples:
+- Hetrogenous immutable sequence.
+- Tuple unpacking
+
+### str:
+- Homogenous immutable sequence of unicode codepoints.
+- String concatenation with `+` or `join()`.
+- `join()` is better method than `+` as it does not use too many temporary variables.
+- Syntax: `"<seperator>".join(sequence)`
+- e.g. ";".join([1,2,3]) => '1;2;3'
+
