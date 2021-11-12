@@ -124,9 +124,23 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Syntax: `"<seperator>".join(sequence)`. e.g. `a = ";".join(["1","2","3"])` => `a = '1;2;3'`.
 - Use `a = a.split(";")` to reverse it.
 - To concatenate: Invoke Join on empty text.
-- String Formatiing: a = 
+- String Formatiing:  
    1. a = "{0}, {1}".format(1,2)
    2. a = "{}, {}".format(1,2)
    3. a = "{x}, {y}".format(y=2, x=1)
    4. a = "{l[0]}, {l[1]}".format(l = [1,2])
    5. a = "{math.pi}, {math.e}".format(math = math)  # here math is the imported module
+
+### range:
+- a.p of integers.
+- Syntax: `range(start, stop, step)`
+- Avoid: `for i in range(len(lst))`; Instead use: `for index, item in enumerate(lst)`.
+
+
+### list:
+- Hetrogenous mutable sequence.
+- List slicing: `lst_slice = lst[start:end+1]`
+- List Coping:
+-  1. `b = a` both b and a refer to same list object. Changes made to the list object either through a or b affects the other as well.
+-  
+-  
