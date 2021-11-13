@@ -193,3 +193,33 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 ### Collection Protocol:
 - Check collectionProtocol.jpg
+
+
+
+
+# Module 7: Exception and Handling:
+
+### Introduction:
+- It gives mechansim to gracefully handle errors.
+
+### Programmer Error:
+- Errors like `IndentationError`, `SynataxError`, and `NameError` shouldn't be handled in `Exception`.
+- It is because these errors encompasses the errors caused by programmer's mistakes which should be handled at runtime.
+
+### Re-Raising Error:
+- We can use Exception-Handling to handle an error and then proceed to re-raise the error.
+- This way the error is raised like usual but along with that, we can peform little operations like printing our own error message.
+- Check: reraiseError.py
+
+### EAFP vs LBYL:
+- EAFP: It's Easier to Ask Forgiveness than Permission.
+-  1. It is a philosophy that says error should be handled when encountered and not before.
+- LBYL: Look Before You Leap.
+-  1. It is a philosophy which suggests all possible cases of errors should be found and handled before executing an opertaion.
+-  Python offers EAFP with Exception-Handling.
+-  LBYL will require lot of if conditions to check for error before an operation is executed.
+-  Exception Handling first tries to execute operation and error is handled when generated.
+
+### Clean-Up Actions:
+- `finally` is used after `try` and all the `Except`.
+- The code in `finally ` is executed no matter if `try` is successful or any one of the `Except`.
