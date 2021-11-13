@@ -21,7 +21,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ## Scalar Type:
 - Built-In data types:
    1. Primitive Scalar Type: int, float, None, Bool
-   2. Collection Type: Dictionary
+   2. Collection Type: str, range, tuple, list, Dictionary, set
 
 
 # Module 3:
@@ -140,4 +140,56 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### list:
 - Hetrogenous mutable sequence.
 - List slicing: `lst_slice = lst[start:end+1]`
-- List Copying and Shallow Copying in Python: Check listCopying.py 
+- List Copying: List can be copied by following methods:
+-  1. Assignment Operator `lst2 = lst1`
+-  2. List Slicing: `lst2 = lst1[:]`
+-  3. Copy Method: `lst2 = lst1.copy()`
+-  4. List Comprehension: `lst2 = [item for item in lst1]`
+- Shallow Copying in Python: 
+-  1. When a list lst2 copies another list lst1, both lst1 and lst2 refer to different lists.
+-  2. But the elements in them still refer to same list (if the element inside the first list is a LIST).
+-  3. Check listCopying.py
+- List Repetition: 
+-  1. If an item inside a list is also a list, then repetition is shallow.
+-  2. The repeted item which is also a list (sublist/nested list) refers to the same previous item (sub;list/ nested list).
+-  3. Check listRepetition.py
+- List Reverse:
+-  1. Inplace reverse: `lst.reverse()`
+-  2. New List: `lst2 = lst1.reversed()`
+- List Sorting:
+-  1.In-plcae sorting: `lst.sort()`
+-  2. New List: `lst2 = lst1.sort()`
+-  Sort method takes two arguments: reverse and key
+-  Key can be any callable object based on which sorting needa to be performed.
+-  e.g. `lst.sort(key=len)` will sort based on the len(item).
+
+### Dictionary:
+- Stores key-value pairs.
+- Has refrence for both keys and values.
+- The key should be immutable so str, int and tuple are accepted and list are not.
+- Because the keys are hashed and mutable objects like list can't be hashed.
+- Dictionary Copying:
+-  1. Copy method: `dict2 = dict1.copy()`
+-  2. Dict constructor: `dict2 = dict(dict1)'
+- Copy in dictionary is shallow just like in the list.
+- Adding New items in dictionary: `dict1.update({dict2})`
+
+
+### Tuples:
+- Unordered collection of unique and immutable objects.
+- Set is mutable and elements can be added or removed but it's items are immutable as they are hashed to make search faster.
+- Because items are immutable, they can't be a list.
+- Items can be added using `add()` and `update()` where later is used for multiple items.
+- Items can be removed using `remove()` and `discard()` where the latter doesn't give an error when element is not present.
+- __Shallow Copying__: Set supports shallow copying.
+- Set Algebra:
+-  1. Union: `union()`
+-  2. Intersection: `intersection()`
+-  3. Difference: `difference()` 
+-  4. Exclusive (in either one but not both): `symmetric_difference()`
+-  5. `issubset()`
+-  6. `issuperset()`
+-  7. `isdisjoint()`
+
+### Collection Protocol:
+- Check collectionProtocol.jpg
