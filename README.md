@@ -77,7 +77,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 # Module 5:
 
-## Introducntion:
+### Introducntion:
 - Variable Assignment:
 -  1. When we write `x = 1000`, x is an object refrence pointing to a int object 1000.
 -  2. When we rewrite `x = 500`, int objectg being immutable is not updated, instead x points to a new int object 500.
@@ -85,7 +85,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  id(): Returns a integer identifier which is unique throughout the life of the object.
 -  `a is b` gives same result as `id(a) == id(b)` i.e. they both refer to same object.
 
-## Argument Passing:
+### Argument Passing:
 - Arguments passed is a function are passed by refrence and not pass by value.
 - Types of Argument:
    1. Positional Argument
@@ -95,13 +95,13 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
    5. Default Argument
 -  Check out: [5 Types of Arguments in Python Function Definitions](https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29)
 
-## Python Type System:
+### Python Type System:
 - Python is stong and dynamic typed.
 - Dynamic Typing indicates that the type of varaible is not defined and decided at run time.
 - Strongly typed means the variables do have a type and it matters when performin goperations. 
 - e.g. you cannot add a string with an integer as neither of it will be implicilty converted.
 
-## Variable Scoping:
+### Variable Scoping:
 - LEGB Scope in Python:
   1. Local
   2. Enclosing
@@ -140,7 +140,4 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### list:
 - Hetrogenous mutable sequence.
 - List slicing: `lst_slice = lst[start:end+1]`
-- List Coping:
--  1. `b = a` both b and a refer to same list object. Changes made to the list object either through a or b affects the other as well.
--  
--  
+- List Copying and Shallow Copying in Python: Check listCopying.py 
