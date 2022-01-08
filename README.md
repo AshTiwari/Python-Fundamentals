@@ -175,8 +175,8 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Adding New items in dictionary: `dict1.update({dict2})`
 
 
-### Tuples:
-- Ordered collection of unique and immutable objects.
+### Sets:
+- Unordered collection of unique and immutable objects.
 - Set is mutable and elements can be added or removed but it's items are immutable as they are hashed to make search faster.
 - Because items are immutable, they can't be a list.
 - Items can be added using `add()` and `update()` where later is used for multiple items.
