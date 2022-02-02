@@ -162,7 +162,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  3. Check listRepetition.py
 - List Reverse:
 -  1. Inplace reverse: `lst.reverse()`
--  2. New List: `lst2 = lst1.reversed()`
+-  2. New List: `lst2 = list(reversed(lst))`
 - List Sorting:
 -  1.In-plcae sorting: `lst.sort()`
 -  2. New List: `lst2 = lst1.sort()`
