@@ -87,9 +87,9 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Introducntion:
 - Variable Assignment:
 -  1. When we write `x = 1000`, x is an object refrence pointing to a int object 1000.
--  2. When we rewrite `x = 500`, int objectg being immutable is not updated, instead x points to a new int object 500.
+-  2. When we rewrite `x = 500`, int object being immutable is not updated, instead x points to a new int object 500.
 -  3. Because int 1000 is no longer referred by any object reference the python garbage collector clears the memmory.
--  id(): Returns a integer identifier which is unique throughout the life of the object.
+-  `id()`: Returns a integer identifier which is unique throughout the life of the object.
 -  `a is b` gives same result as `id(a) == id(b)` i.e. they both refer to same object.
 
 ### Argument Passing:
