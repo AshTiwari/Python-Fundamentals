@@ -132,11 +132,11 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Use `a = a.split(";")` to reverse it.
 - To concatenate: Invoke Join on empty text.
 - String Formatiing:  
-   1. a = "{0}, {1}".format(1,2)
-   2. a = "{}, {}".format(1,2)
-   3. a = "{x}, {y}".format(y=2, x=1)
-   4. a = "{l[0]}, {l[1]}".format(l = [1,2])
-   5. a = "{math.pi}, {math.e}".format(math = math)  # here math is the imported module
+   1. `a = "{0}, {1}".format(1,2)`
+   2. `a = "{}, {}".format(1,2)`
+   3. `a = "{x}, {y}".format(y=2, x=1)`
+   4. `a = "{lst[0]}, {lst[1]}".format(lst = [1,2])`
+   5. `a = "{math.pi}, {math.e}".format(math = math)`  # here math is the imported module
 
 ### range:
 - a.p of integers.
