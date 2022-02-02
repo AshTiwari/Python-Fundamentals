@@ -45,8 +45,8 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - collection of bytes.
 - Can be constructed using:
    1. s = b"data"
-   2. using the bytees() constructor
-- string is encoded to bytes and bytes is decoded to str.
+   2. using the bytes() constructor
+- string can be encoded to bytes and bytes can be decoded to str.
 
 ## list:
 - mutable sequence of objects.
@@ -105,7 +105,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Python Type System:
 - Python is stong and dynamic typed.
 - Dynamic Typing indicates that the type of varaible is not defined and decided at run time.
-- Strongly typed means the variables do have a type and it matters when performin goperations. 
+- Strongly typed means the variables do have a type and it matters when performing operations. 
 - e.g. you cannot add a string with an integer as neither of it will be implicilty converted.
 
 ### Variable Scoping:
