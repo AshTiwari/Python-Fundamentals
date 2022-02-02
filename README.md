@@ -8,9 +8,11 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - A general purpose programming language. 
 - Python is an interpreted language however the code in compiled invisibly. 
 - Python is strongly typed i.e. every object has a type.
+
       >> `a = '1' + 1`
       >> This will give TypeError.
 - Python is dynamically typed which means there is no type checking prior to running the code.
+
       >> `a = '1'`
       >> `a = 1`
       >> This is allowed.
