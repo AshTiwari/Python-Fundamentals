@@ -231,3 +231,25 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - `finally` is used after `try` and all the `Except`.
 - The code in `finally ` is executed no matter if `try` is successful or any one of the `Except`.
 - Check exceptionHandling.py
+
+### Platform Specific Code:
+- Some code are OS-depenedent and will be different for Windows or Linux or MacOS.
+- Such code can be implemented using Try and Except block.
+- Check platformSpecificCode.py
+
+
+
+# Module 8: Iterables
+
+### Comprehension:
+- It is an approach to define an iterable.
+- It is declarative and functional in style.
+- It is readable, expressive, effective and consice.
+
+### Types of Comprehension:
+- List Comprehension: `[ expr(item) for item in iterable ]`
+- Set Comprehension: `{ expr(item) for item in iterable }`
+- Dictionary Comprehension: `{ key_expr: value_expr for item in iterable }`
+
+### List Comprehension:
+- Syntax: `lst = 
