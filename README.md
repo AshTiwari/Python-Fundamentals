@@ -230,3 +230,4 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Clean-Up Actions:
 - `finally` is used after `try` and all the `Except`.
 - The code in `finally ` is executed no matter if `try` is successful or any one of the `Except`.
+- Check exceptionHandling.py
