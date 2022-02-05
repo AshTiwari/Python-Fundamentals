@@ -263,4 +263,5 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - `>>> second_element = next(a)`
 - `[1,2,3,4,5]` is the iterable object
 - `a` is the iterator.
+- Link: https://stackoverflow.com/questions/16301253/what-exactly-is-pythons-iterator-protocol
 
