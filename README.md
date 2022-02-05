@@ -261,5 +261,6 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Iterator object can be passed to a built-in next() funciton to fetch the next item.
 - `>>> first_element = next(a)`
 - `>>> second_element = next(a)`
-
+- `[1,2,3,4,5]` is the iterable object
+- `a` is the iterator.
 
