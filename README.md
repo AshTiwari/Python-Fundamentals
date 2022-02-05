@@ -251,5 +251,15 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Set Comprehension: `{ expr(item) for item in iterable }`
 - Dictionary Comprehension: `{ key_expr: value_expr for item in iterable }`
 
-### List Comprehension:
-- Syntax: `lst = 
+### Filtering Predicate:
+- Syntax: `[ expr(item) for item in iterable_object if condition(item)]`
+- `>>> even = [i for i in range(1,10) if i%2==0]`
+
+### Iterator Protocol:
+- Iterable object can be passed to a built-in iter() function to get an iterator.
+- `>>> a = iter([1,2,3,4,5])`
+- Iterator object can be passed to a built-in next() funciton to fetch the next item.
+- `>>> first_element = next(a)`
+- `>>> second_element = next(a)`
+
+
