@@ -265,3 +265,15 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - `a` is the iterator.
 - Link: https://stackoverflow.com/questions/16301253/what-exactly-is-pythons-iterator-protocol
 
+
+### Generator:
+- Generators are functions that describe an iterable series.
+- All generators are iterbales.
+- Hence, they are called `lazy-evaluator` because the next value is computed only on demand.
+- It can provide an infinite sequence with no end.
+- Easily Composable (attached) into pipelines for natural stram processing.
+- The generator function returns a generator object.
+- A generator can create multiple genreator_object which advances (tracks the progress of iterable_object) independently. 
+- It can have multiple yield keywoard.
+- When `next()` function is called, code is just executed uptil the next `yield` statement and not further.
+- ``
