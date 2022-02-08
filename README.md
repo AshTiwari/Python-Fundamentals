@@ -268,12 +268,19 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 ### Generator:
 - Generators are functions that describe an iterable series.
+- Any function with `yield` keywoard is a generator.
+- `return` keywoard determines the end of the iterator.
 - All generators are iterbales.
-- Hence, they are called `lazy-evaluator` because the next value is computed only on demand.
+- They are called `lazy-evaluator` because the next value is computed only on demand.
 - It can provide an infinite sequence with no end.
-- Easily Composable (attached) into pipelines for natural stram processing.
+- They Easily Composable (attached) into pipelines for natural stram processing.
 - The generator function returns a generator object.
-- A generator can create multiple genreator_object which advances (tracks the progress of iterable_object) independently. 
+- A generator can create multiple genreator_object which advances (tracks the progress of iterable_object) independently. Check: `generatorObjectAdvances()` in `generator.py`.
 - It can have multiple yield keywoard.
-- When `next()` function is called, code is just executed uptil the next `yield` statement and not further.
-- ``
+- When next item of generator is demanded, code is just executed uptil the next `yield` statement and not further. 
+- For the next item, code is resumed from the previous `yield` keywoard. Check `resumeExecution()` in `generator.py`.
+- Check `generators.py`
+
+
+### Stateful
+
