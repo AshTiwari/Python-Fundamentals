@@ -249,7 +249,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Types of Comprehension:
 - List Comprehension: `[ expr(item) for item in iterable ]`
 - Set Comprehension: `{ expr(item) for item in iterable }`
-      Note: Set Comprehension uses `{ }` instead of `( )`
+      **Note: Set Comprehension uses `{ }` instead of `( )`**
 - Dictionary Comprehension: `{ key_expr: value_expr for item in iterable }`
 
 ### Filtering Predicate:
