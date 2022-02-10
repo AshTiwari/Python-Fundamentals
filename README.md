@@ -247,11 +247,12 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - It is readable, expressive, effective and consice.
 
 ### Types of Comprehension:
-- List Comprehension: `[ expr(item) for item in iterable ]`
-- Set Comprehension: `{ expr(item) for item in iterable }`
+- List Comprehension: `[ expr(item) for item in iterable if condition(item) ]`
+- Set Comprehension: `{ expr(item) for item in iterable if condition(item) }`
 
-      **Note:** Set Comprehension uses `{ }` instead of `( )`
-- Dictionary Comprehension: `{ key_expr: value_expr for item in iterable }`
+      Note: Set Comprehension uses `{ }` instead of `( )`
+- Dictionary Comprehension: `{ key_expr: value_expr for item in iterable if condition(item) }`
+- Generator Comprehension: `( expr(item) for item in iterable if condition(item) )`
 
 ### Filtering Predicate:
 - Syntax: `[ expr(item) for item in iterable_object if condition(item)]`
