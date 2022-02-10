@@ -251,8 +251,11 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Set Comprehension: `{ expr(item) for item in iterable if condition(item) }`
 
       Note: Set Comprehension uses `{ }` instead of `( )`
+      
 - Dictionary Comprehension: `{ key_expr: value_expr for item in iterable if condition(item) }`
 - Generator Comprehension: `( expr(item) for item in iterable if condition(item) )`
+
+      Note: Generator Comprehension uses `( )`
 
 ### Filtering Predicate:
 - Syntax: `[ expr(item) for item in iterable_object if condition(item)]`
@@ -271,6 +274,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 ### Generator:
 - Generators are functions that describe an iterable series.
+- It is a `single-use` object.
 - Any function with `yield` keywoard is a generator.
 - `return` keywoard determines the end of the iterator.
 - All generators are iterbales.
@@ -282,10 +286,16 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - It can have multiple yield keywoard.
 - When next item of generator is demanded, code is just executed uptil the next `yield` statement and not further. 
 - For the next item, code is resumed from the previous `yield` keywoard. Check `resumeExecution()` in `generator.py`.
-- Check `generators.py`
+- Check `generators.py`, `factorialGenerator.py`
 
 
 ### Stateful Generator Functions:
 - Generator Functoins stores the state of their variables to execute it the next item is evaluated from the generator object.
 - This is done so the generator function can resume the function execution when the next item is evaluated.
+- Check: statefulGenerator.py
+
+### Generator Comprehension:
+- Advantage of using Generator Comprehension over List Comprehension is it saves a lot of memory as it doesn't compute and store potentiall millions of data in a data structure.
+- Disadvantage is items in List can be accessed anytime but in Generator Comprehension, items can be accessed only once.
+
 
