@@ -249,6 +249,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Types of Comprehension:
 - List Comprehension: `[ expr(item) for item in iterable ]`
 - Set Comprehension: `{ expr(item) for item in iterable }`
+      Note: Set Comprehension uses `{ }` instead of `( )`
 - Dictionary Comprehension: `{ key_expr: value_expr for item in iterable }`
 
 ### Filtering Predicate:
@@ -282,5 +283,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Check `generators.py`
 
 
-### Stateful
+### Stateful Generator Functions:
+- Generator Functoins stores the state of their variables to execute it the next item is evaluated from the generator object.
+- This is done so the generator function can resume the function execution when the next item is evaluated.
 
