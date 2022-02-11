@@ -300,3 +300,32 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Disadvantage is items in List can be accessed anytime but in Generator Comprehension, items can be accessed only once.
 - Check `Types of Generators` above.
 
+
+
+# Module 9: Classes
+
+### Introduction:
+- Every object in Python belongs to some Class.
+- Class defines the structure and behaviour of it's object.
+- User defined Classes are used when we want to create a new `type` in Python.
+- `type(class_object)` and `type(class_name)` both gives the name of the Class it belongs to.
+
+### Important Terms:
+- Method: Function defined within the Class.
+- Instance Method: Function which can be called on an object.
+- self: name of the first parameter to any and all instance method.
+
+### self:
+- self is a not a keywoard but is treated as a keywoard.
+- It is a coding standard but not a necessity.
+- We can replace the word `self` with any other word to represent the object of a method.
+- Different methods can have different name as their first parameter.
+- Check keywoardSelf.py
+- The instance-method calling code `object_name.method_name()` is treated as `class_name.method_name(object_name)`
+- Hence, `self` parameter is kept in method definition to catch the object been passed. 
+- Check `objectMethodRepresentation` function and `needOfSelf` function from `keywoardSelf.py`.
+
+
+
+
+
