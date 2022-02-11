@@ -8,7 +8,14 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - A general purpose programming language. 
 - Python is an interpreted language however the code in compiled invisibly. 
 - Python is strongly typed i.e. every object has a type.
+
+      >> `a = '1' + 1`
+      >> This will give TypeError.
 - Python is dynamically typed which means there is no type checking prior to running the code.
+
+      >> `a = '1'`
+      >> `a = 1`
+      >> This is allowed.
 
 
 # Module 2:
@@ -38,8 +45,8 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - collection of bytes.
 - Can be constructed using:
    1. s = b"data"
-   2. using the bytees() constructor
-- string is encoded to bytes and bytes is decoded to str.
+   2. using the bytes() constructor
+- string can be encoded to bytes and bytes can be decoded to str.
 
 ## list:
 - mutable sequence of objects.
@@ -80,9 +87,9 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Introducntion:
 - Variable Assignment:
 -  1. When we write `x = 1000`, x is an object refrence pointing to a int object 1000.
--  2. When we rewrite `x = 500`, int objectg being immutable is not updated, instead x points to a new int object 500.
+-  2. When we rewrite `x = 500`, int object being immutable is not updated, instead x points to a new int object 500.
 -  3. Because int 1000 is no longer referred by any object reference the python garbage collector clears the memmory.
--  id(): Returns a integer identifier which is unique throughout the life of the object.
+-  `id()`: Returns a integer identifier which is unique throughout the life of the object.
 -  `a is b` gives same result as `id(a) == id(b)` i.e. they both refer to same object.
 
 ### Argument Passing:
@@ -98,7 +105,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Python Type System:
 - Python is stong and dynamic typed.
 - Dynamic Typing indicates that the type of varaible is not defined and decided at run time.
-- Strongly typed means the variables do have a type and it matters when performin goperations. 
+- Strongly typed means the variables do have a type and it matters when performing operations. 
 - e.g. you cannot add a string with an integer as neither of it will be implicilty converted.
 
 ### Variable Scoping:
@@ -125,11 +132,11 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Use `a = a.split(";")` to reverse it.
 - To concatenate: Invoke Join on empty text.
 - String Formatiing:  
-   1. a = "{0}, {1}".format(1,2)
-   2. a = "{}, {}".format(1,2)
-   3. a = "{x}, {y}".format(y=2, x=1)
-   4. a = "{l[0]}, {l[1]}".format(l = [1,2])
-   5. a = "{math.pi}, {math.e}".format(math = math)  # here math is the imported module
+   1. `a = "{0}, {1}".format(1,2)`
+   2. `a = "{}, {}".format(1,2)`
+   3. `a = "{x}, {y}".format(y=2, x=1)`
+   4. `a = "{lst[0]}, {lst[1]}".format(lst = [1,2])`
+   5. `a = "{math.pi}, {math.e}".format(math = math)`  # here math is the imported module
 
 ### range:
 - a.p of integers.
@@ -155,7 +162,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  3. Check listRepetition.py
 - List Reverse:
 -  1. Inplace reverse: `lst.reverse()`
--  2. New List: `lst2 = lst1.reversed()`
+-  2. New List: `lst2 = list(reversed(lst))`
 - List Sorting:
 -  1.In-plcae sorting: `lst.sort()`
 -  2. New List: `lst2 = lst1.sort()`
@@ -175,8 +182,8 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Adding New items in dictionary: `dict1.update({dict2})`
 
 
-### Tuples:
-- Ordered collection of unique and immutable objects.
+### Sets:
+- Unordered collection of unique and immutable objects.
 - Set is mutable and elements can be added or removed but it's items are immutable as they are hashed to make search faster.
 - Because items are immutable, they can't be a list.
 - Items can be added using `add()` and `update()` where later is used for multiple items.
@@ -223,3 +230,72 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 ### Clean-Up Actions:
 - `finally` is used after `try` and all the `Except`.
 - The code in `finally ` is executed no matter if `try` is successful or any one of the `Except`.
+- Check exceptionHandling.py
+
+### Platform Specific Code:
+- Some code are OS-depenedent and will be different for Windows or Linux or MacOS.
+- Such code can be implemented using Try and Except block.
+- Check platformSpecificCode.py
+
+
+
+# Module 8: Iterables
+
+### Comprehension:
+- It is an approach to define an iterable.
+- It is declarative and functional in style.
+- It is readable, expressive, effective and consice.
+
+### Types of Comprehension:
+- List Comprehension: `[ expr(item) for item in iterable if condition(item) ]`
+- Set Comprehension: `{ expr(item) for item in iterable if condition(item) }`
+
+      Note: Set Comprehension uses `{ }` instead of `( )`
+      
+- Dictionary Comprehension: `{ key_expr: value_expr for item in iterable if condition(item) }`
+- Generator Comprehension: `( expr(item) for item in iterable if condition(item) )`
+
+      Note: Generator Comprehension uses `( )`
+
+### Filtering Predicate:
+- Syntax: `[ expr(item) for item in iterable_object if condition(item)]`
+- `>>> even = [i for i in range(1,10) if i%2==0]`
+
+### Iterator Protocol:
+- Iterable object can be passed to a built-in iter() function to get an iterator.
+- `>>> a = iter([1,2,3,4,5])`
+- Iterator object can be passed to a built-in next() funciton to fetch the next item.
+- `>>> first_element = next(a)`
+- `>>> second_element = next(a)`
+- `[1,2,3,4,5]` is the iterable object
+- `a` is the iterator.
+- Link: https://stackoverflow.com/questions/16301253/what-exactly-is-pythons-iterator-protocol
+
+
+### Generator:
+- Generators are functions that describe an iterable series.
+- It is a `single-use` object.
+- Any function with `yield` keywoard is a generator.
+- `return` keywoard determines the end of the iterator.
+- All generators are iterbales.
+- They are called `lazy-evaluator` because the next value is computed only on demand.
+- It can provide an infinite sequence with no end.
+- They Easily Composable (attached) into pipelines for natural stram processing.
+- The generator function returns a generator object.
+- A generator can create multiple genreator_object which advances (tracks the progress of iterable_object) independently. Check: `generatorObjectAdvances()` in `generator.py`.
+- It can have multiple yield keywoard.
+- When next item of generator is demanded, code is just executed uptil the next `yield` statement and not further. 
+- For the next item, code is resumed from the previous `yield` keywoard. Check `resumeExecution()` in `generator.py`.
+- Check `generators.py`, `factorialGenerator.py`
+
+
+### Stateful Generator Functions:
+- Generator Functoins stores the state of their variables to execute it the next item is evaluated from the generator object.
+- This is done so the generator function can resume the function execution when the next item is evaluated.
+- Check: statefulGenerator.py
+
+### Generator Comprehension:
+- Advantage of using Generator Comprehension over List Comprehension is it saves a lot of memory as it doesn't compute and store potentiall millions of data in a data structure.
+- Disadvantage is items in List can be accessed anytime but in Generator Comprehension, items can be accessed only once.
+
+
