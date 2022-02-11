@@ -295,7 +295,8 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Check: statefulGenerator.py
 
 ### Generator Comprehension:
+- Generator Comprehension Syntax: `( expr(item) for item in iterable if condition(item) )`
 - Advantage of using Generator Comprehension over List Comprehension is it saves a lot of memory as it doesn't compute and store potentiall millions of data in a data structure.
 - Disadvantage is items in List can be accessed anytime but in Generator Comprehension, items can be accessed only once.
-
+- Check `Types of Generators` above.
 
