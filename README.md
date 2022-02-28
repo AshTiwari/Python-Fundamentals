@@ -27,7 +27,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 ## Scalar Type:
 - Built-In data types:
-   1. Primitive Scalar Type: int, float, None, Bool
+   1. Primitive Scalar Type: int, float, None, Bool, Complex
    2. Collection Type: str, range, tuple, list, Dictionary, set
 
 
