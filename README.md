@@ -198,6 +198,15 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  6. `issuperset()`
 -  7. `isdisjoint()`
 
+
+### List vs Tuple:
+- Lists are mutable and Tuples are not.
+- New elements can be added to List using append() or extend() but not in Tuple.
+- List can be sorted.
+- List should be used when the data inside it can be updated. Tuple should be used to keep the data safe from alteration or data corruption.
+- Tuple are hashable whereas List are not.
+- Hence, Tuple can be used as key of a dictionary.
+
 ### Collection Protocol:
 - Check collectionProtocol.jpg
 
