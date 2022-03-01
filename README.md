@@ -170,6 +170,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  Key can be any callable object based on which sorting needa to be performed.
 -  e.g. `lst.sort(key=len)` will sort based on the len(item).
 
+
 ### Dictionary:
 - Stores key-value pairs.
 - Has refrence for both keys and values.
@@ -206,6 +207,16 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - List should be used when the data inside it can be updated. Tuple should be used to keep the data safe from alteration or data corruption.
 - Tuple are hashable whereas List are not.
 - Hence, Tuple can be used as key of a dictionary.
+
+
+## Why are Tuple faster than Listand takes less storage?
+- Tuples are stored in single block of memory.
+- Lists are stored in two blocks of memory: fixed block and variable block.
+- Fix block stores the meta data which is the information regarding the object.
+- Variable block stores the actual data.
+- Tuple refers to it's elements directly whereas List requires an extra layer.
+- Tuple stores an array to store pointers of it's element.
+- List requires to store a pointer to the array which stores the pointer to the elements.
 
 ### Collection Protocol:
 - Check collectionProtocol.jpg
