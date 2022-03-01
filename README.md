@@ -209,7 +209,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Hence, Tuple can be used as key of a dictionary.
 
 
-## Why are Tuple faster than Listand takes less storage?
+### Why are Tuple faster than List and takes less storage?
 - Tuples are stored in single block of memory.
 - Lists are stored in two blocks of memory: fixed block and variable block.
 - Fix block stores the meta data which is the information regarding the object.
