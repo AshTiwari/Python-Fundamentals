@@ -1,5 +1,5 @@
 # Python-Fundamentals
-This repository contains notes from the course __Python Fundamentals__ from __Pluralsight__ by __Austin Bingham__ and __Robert Smallshire__.
+This repository primarily contains notes from the course __Python Fundamentals__ from __Pluralsight__ by __Austin Bingham__ and __Robert Smallshire__ but also have contents of other resources.
 
 
 # Module 1:
@@ -27,7 +27,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 
 ## Scalar Type:
 - Built-In data types:
-   1. Primitive Scalar Type: int, float, None, Bool
+   1. Primitive Scalar Type: int, float, None, Bool, Complex
    2. Collection Type: str, range, tuple, list, Dictionary, set
 
 
@@ -170,6 +170,7 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  Key can be any callable object based on which sorting needa to be performed.
 -  e.g. `lst.sort(key=len)` will sort based on the len(item).
 
+
 ### Dictionary:
 - Stores key-value pairs.
 - Has refrence for both keys and values.
@@ -197,6 +198,25 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 -  5. `issubset()`
 -  6. `issuperset()`
 -  7. `isdisjoint()`
+
+
+### List vs Tuple:
+- Lists are mutable and Tuples are not.
+- New elements can be added to List using append() or extend() but not in Tuple.
+- List can be sorted.
+- List should be used when the data inside it can be updated. Tuple should be used to keep the data safe from alteration or data corruption.
+- Tuple are hashable whereas List are not.
+- Hence, Tuple can be used as key of a dictionary.
+
+
+### Why are Tuple faster than List and takes less storage?
+- Tuples are stored in single block of memory.
+- Lists are stored in two blocks of memory: fixed block and variable block.
+- Fix block stores the meta data which is the information regarding the object.
+- Variable block stores the actual data.
+- Tuple refers to it's elements directly whereas List requires an extra layer.
+- Tuple stores an array to store pointers of it's element.
+- List requires to store a pointer to the array which stores the pointer to the elements.
 
 ### Collection Protocol:
 - Check collectionProtocol.jpg
@@ -295,7 +315,37 @@ This repository contains notes from the course __Python Fundamentals__ from __Pl
 - Check: statefulGenerator.py
 
 ### Generator Comprehension:
+- Generator Comprehension Syntax: `( expr(item) for item in iterable if condition(item) )`
 - Advantage of using Generator Comprehension over List Comprehension is it saves a lot of memory as it doesn't compute and store potentiall millions of data in a data structure.
 - Disadvantage is items in List can be accessed anytime but in Generator Comprehension, items can be accessed only once.
+- Check `Types of Generators` above.
+
+
+
+# Module 9: Classes
+
+### Introduction:
+- Every object in Python belongs to some Class.
+- Class defines the structure and behaviour of it's object.
+- User defined Classes are used when we want to create a new `type` in Python.
+- `type(class_object)` and `type(class_name)` both gives the name of the Class it belongs to.
+
+### Important Terms:
+- Method: Function defined within the Class.
+- Instance Method: Function which can be called on an object.
+- self: name of the first parameter to any and all instance method.
+
+### self:
+- self is a not a keywoard but is treated as a keywoard.
+- It is a coding standard but not a necessity.
+- We can replace the word `self` with any other word to represent the object of a method.
+- Different methods can have different name as their first parameter.
+- Check keywoardSelf.py
+- The instance-method calling code `object_name.method_name()` is treated as `class_name.method_name(object_name)`
+- Hence, `self` parameter is kept in method definition to catch the object been passed. 
+- Check `objectMethodRepresentation` function and `needOfSelf` function from `keywoardSelf.py`.
+
+
+
 
 
