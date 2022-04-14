@@ -337,7 +337,7 @@ This repository primarily contains notes from the course __Python Fundamentals__
 
 ### self:
 - self is a not a keywoard but is treated as a keywoard.
-- Similar to self keywoard in Java and C++.
+- Similar to `this` keywoard in Java and C++.
 - It is a coding standard but not a necessity.
 - We can replace the word `self` with any other word to represent the object of a method.
 - Different methods can have different name as their first parameter.
@@ -352,7 +352,15 @@ This repository primarily contains notes from the course __Python Fundamentals__
 - It is not a constructor as opposed to in Java or C++.
 - It is used to configure an item that already exists and it doesn't constructs it.
 - Actual `constructor` is provided by the Python Runtime System which checks for the presence of `__init__` which is the initializer.
--  
 
+## Class Invariant:
+- Limitations of an object that lasts for it's lifetime.
+- Assertions can be used to implement Class Invariants.
+- However, it is mostly considered non-pythonic and `Type-Hinting` is preffered over it.
+- Visit: https://stackoverflow.com/questions/40641019/class-invariants-in-python
 
+## Law Of Demeter:
+- It is a concept of OOP-design aimed at reducing the number of coupling.
+- It says you should never call method on objects you receive from other calls.
+- Basically, only talk to your friends and not friend of friends. 
 
