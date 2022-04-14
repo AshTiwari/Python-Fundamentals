@@ -5,9 +5,11 @@ class A:
         self.objectOfB = objectOfB
         self._objectOfC = objectOfC
 
+    # follows the principle of Law Of Demeter.
     def methodOfC(self):
         return self._objectOfC.methodOfC()
 
+    # Doesn't follow Law of Demeter.
     def methodOfB(self):
         return self.objectOfB.methodOfB()
 
