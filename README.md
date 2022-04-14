@@ -363,4 +363,6 @@ This repository primarily contains notes from the course __Python Fundamentals__
 - It is a concept of OOP-design aimed at reducing the number of coupling.
 - It says you should never call method on objects you receive from other calls.
 - Basically, only talk to your friends and not friend of friends. 
+- Check LawOfDemeter.py file.
+- In LawOfDemeter.py, instead of allowing the client/user to reach through the object C to access `methodOfC()` method, there is a method created to delegate that task to `objectOfC`.
 
