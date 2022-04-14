@@ -337,6 +337,7 @@ This repository primarily contains notes from the course __Python Fundamentals__
 
 ### self:
 - self is a not a keywoard but is treated as a keywoard.
+- Similar to self keywoard in Java and C++.
 - It is a coding standard but not a necessity.
 - We can replace the word `self` with any other word to represent the object of a method.
 - Different methods can have different name as their first parameter.
@@ -345,7 +346,13 @@ This repository primarily contains notes from the course __Python Fundamentals__
 - Hence, `self` parameter is kept in method definition to catch the object been passed. 
 - Check `objectMethodRepresentation` function and `needOfSelf` function from `keywoardSelf.py`.
 
-
+## `__init__`:
+- Initalizes the object.
+- Should not return anything.
+- It is not a constructor as opposed to in Java or C++.
+- It is used to configure an item that already exists and it doesn't constructs it.
+- Actual `constructor` is provided by the Python Runtime System which checks for the presence of `__init__` which is the initializer.
+-  
 
 
 
