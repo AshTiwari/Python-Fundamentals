@@ -366,3 +366,13 @@ This repository primarily contains notes from the course __Python Fundamentals__
 - Check LawOfDemeter.py file.
 - In LawOfDemeter.py, instead of allowing the client/user to reach through the object C to access `methodOfC()` method, there is a method created to delegate that task to `objectOfC`.
 
+## Polymorphism:
+- Using objects of different types with common interface.
+- e.g. `len([1,2,3,4])` and `len("abcd")` have common interface but different working.
+- Check Duck Typing.
+
+## Duck Typing:
+- If it walks like a Duck and swims like a Duck and quack likes a Duck, then it is a Duck.
+- In staticly typed language, the compiler decides if an object can be used for a purpose.
+- In Python, an objects fitness for any purpose can be determined at run-time.
+- If at run-time, it can walk, swim and quack like a Duck, it can be used as a Duck. 
