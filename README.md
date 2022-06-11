@@ -1,6 +1,5 @@
 # Python-Fundamentals
-This repository primarily contains notes from the course __Python Fundamentals__ from __Pluralsight__ by __Austin Bingham__ and __Robert Smallshire__ but also have contents of other resources.
-
+This repository contains notes on Fundametals of Python.
 
 # Module 1:
 
