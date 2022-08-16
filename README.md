@@ -12,8 +12,8 @@ This repository contains notes on Fundametals of Python.
       >> This will give TypeError.
 - Python is dynamically typed which means there is no type checking prior to running the code.
 
-      >> `a = '1'`
-      >> `a = 1`
+      >> a = '1'
+      >> a = 1
       >> This is allowed.
 
 
